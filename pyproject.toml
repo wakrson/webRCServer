@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wercserver"  # Change this to your actual project name
+version = "0.1.0" # FIXED: Static version defined here
+description = "Project description"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [ ]
+
+[tool.setuptools.packages.find]
+# This tells setuptools to look for packages in the root directory
+# and include 'app', 'models', and 'datasets'.
+where = ["."]
+include = ["app"]
+namespaces = false
+
+[tool.black]
+line-length = 120
+
+[tool.pylint.master]
+persistent = false
+score = false
+
+[tool.pylint.messages_control]
+disable = "all"
+enable = [
+  "miscellaneous",
+  "similarities",
+]
+
+[tool.pylint.similarities]
+ignore-comments = true
+ignore-docstrings = true
+ignore-imports = true
+min-similarity-lines = 8
+
+[tool.pylint.reports]
+reports = false
+
+[tool.pylint.miscellaneous]
+notes = [
+  "FIXME",
+  "XXX",
+  "TODO",
+]

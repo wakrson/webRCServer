@@ -1,0 +1,28 @@
+fastapi
+aiortc
+uvicorn
+httptools
+watchfiles
+python-dotenv
+faiss-cpu
+gunicorn
+opencv-python
+websockets
+torch==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
+torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu128
+ftfy
+regex
+tqdm
+onnx
+timm
+ultralytics
+transformers
+#git+https://github.com/openai/CLIP.git
+uuid
+onnxruntime
+scikit-image
+cupy-cuda12x
+pycocotools
+setuptools
+wheel
