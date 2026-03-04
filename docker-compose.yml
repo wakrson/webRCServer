@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file: .env
+
+  redis:
+    image: redis:7-alpine
+    # pub/sub for room state across workers
+
+  coturn:
+    image: coturn/coturn:latest
+    network_mode: host
+    volumes:
+      - ./turnserver.conf:/etc/turnserver.conf
+    command: ["-c", "/etc/turnserver.conf"]

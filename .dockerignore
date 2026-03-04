@@ -1,0 +1,61 @@
+# Ignore COCO dataset (HUGE)
+backend/datasets/
+backend/datasets/coco/
+backend/datasets/coco/*
+backend/datasets/coco2017labels-segments.zip
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore venvs
+venv/
+env/
+
+# Ignore Node deps (HUGE)
+node_modules/
+frontend/node_modules/
+
+# Next.js build artifacts
+frontend/.next/
+frontend/out/
+
+# Ignore Git
+.git/
+.gitignore/
+
+# Ignore logs
+*.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Ignore Docker build outputs
+build/
+dist/
+
+# Ignore model artifacts
+*.engine
+*.plan
+*.trt
+*.onnx
+*.pth
+*.pt
+*.ckpt
+*.npz
+
+# Ignore large dev/build folders
+backend/models/*
+**/build/
+**/cmake-build*/
+**/CMakeCache.txt
+**/*.a
+**/*.o
+**/*.so
+
+# Ignore OS junk
+.DS_Store
+*.tmp
+*.swp
